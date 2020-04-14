@@ -1,0 +1,163 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.misbotones{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: burlywood;
+    height: 300px;
+    width: 100%;
+}
+
+button{
+    margin: 20px;
+    font-family: 'Cabin', sans-serif;
+    width: 150px;
+    height: 60px;
+    border:none;
+    cursor:pointer;
+}
+
+.button-1{
+    color:white;
+    font-weight: bolder;
+    background-color: crimson;
+    transition-property: background-color,border,color ;
+    transition-duration: 0.8s, 1s, 0.8s;   
+}
+
+.button-1:hover{
+    background-color: rgb(243, 182, 194);
+    color: crimson;
+    border: 2px solid crimson;
+}
+
+.button-2{
+    color:white;
+    font-weight: bolder;
+    background-color: crimson;
+    transition-property: background-color,border,color,width;
+    transition-duration: 0.8s, 1s, 0.8s,1s;  
+}
+
+.button-2:hover{
+    background-color: rgb(243, 182, 194);
+    color: crimson;
+    border: 2px solid crimson;
+    border-radius: 50%;
+    width: 60px;
+}
+
+.button-3{
+    color:white;
+    font-weight: bolder;
+    background-color: crimson;
+    position: relative;
+    top: 0px;
+    box-shadow: 0px 5px 0px 0px rgb(148, 9, 37);
+    transition-property:background-color,box-shadow, top;
+    transition-duration: 0.2s; 
+}
+
+.button-3:hover{
+    box-shadow: 0px 3px 0px 0px rgb(148, 9, 37);
+    top:3px;
+}
+
+.button-3:focus{
+    box-shadow: none;
+    top:6px;
+    border:none;
+}
+
+.button-4{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color:white;
+    font-weight: bolder;
+    background-color: crimson;
+    opacity:1;
+    z-index: 10;
+    transition-property: background-color,border,color,width;
+    transition-duration: 0.8s, 1s, 0.8s,1s;  
+}
+
+.overlay-button{
+    width: 150px;
+    height: 60px;
+    z-index: 5;
+}
+
+.button-msj{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    top:-60px;
+    text-align: center;
+    transition-property: opacity;
+    transition-duration: 0.8s;
+}
+
+.button-4:hover{
+    opacity: 0;
+}
+
+.overlay-button2{
+    display: block;
+    width: 150px;
+    height: 60px;
+    cursor:pointer;
+    margin: 20px;
+    font-family: 'Cabin', sans-serif;
+    position: absolute;
+    right: 600px;
+    top:400px;
+    z-index: 10;
+}
+
+.button-5{
+    display: flex;
+    justify-self:center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    color:white;
+    font-weight: bolder;
+    background-color: crimson;
+}
+
+.text{
+    opacity:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -60px;
+}
+
+.overlay-button2:hover{
+    .text{
+        opacity: 1;
+    }
+}
+
+    
+
+
+
+
+
+
+
