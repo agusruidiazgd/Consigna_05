@@ -2,6 +2,7 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .misbotones{
@@ -20,6 +21,10 @@ button{
     height: 60px;
     border:none;
     cursor:pointer;
+}
+
+button:focus{
+    outline: none;
 }
 
 .button-1{
@@ -68,26 +73,30 @@ button{
     top:3px;
 }
 
-.button-3:focus{
+.button-3:active{
     box-shadow: none;
     top:6px;
     border:none;
 }
 
 .button-4{
-    width: 100%;
-    height: 100%;
-    margin: 0;
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 60px;
     color:white;
     font-weight: bolder;
     background-color: crimson;
     opacity:1;
     z-index: 10;
-    transition-property: background-color,border,color,width;
-    transition-duration: 0.8s, 1s, 0.8s,1s;  
+    transition:background-color 0.8s linear,
+        border 1s linear,
+        color 0.8s linear,
+        width 1s linear;  
 }
 
-.overlay-button{
+
+.pepe{
     width: 150px;
     height: 60px;
     z-index: 5;
@@ -96,20 +105,27 @@ button{
 .button-msj{
     display: flex;
     justify-content: center;
-    align-content: center;
-    opacity: 0.5;
+    align-items: center;
+    opacity: 0;
     width: 100%;
     height: 100%;
     margin: 0;
-    position: relative;
-    top:-60px;
+    top:0;
+    left:0;
+    position: absolute;
     text-align: center;
     transition-property: opacity;
     transition-duration: 0.8s;
 }
 
-.button-4:hover{
-    opacity: 0;
+.button-4:hover .pepe{
+    opacity:0;
+
+}
+
+.button-4:hover .button-msj{
+    opacity:1;
+
 }
 
 .overlay-button2{
@@ -147,10 +163,9 @@ button{
     top: -60px;
 }
 
-.overlay-button2:hover{
-    .text{
-        opacity: 1;
-    }
+.overlay-button2:hover .text{
+    opacity: 1;
+    background-color: teal;
 }
 
     
